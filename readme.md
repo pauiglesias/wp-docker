@@ -12,5 +12,5 @@ sudo chown -R www-data:[my-user] wordpress/
 sudo chmod -R 775 wordpress/
 
 # wp-config.php
-define('WP_HOME', 'http://wp-docker-test.local');
+define('WP_HOME', 'http://wp-docker-test.local');  
 define('WP_SITEURL', 'http://wp-docker-test.local');
