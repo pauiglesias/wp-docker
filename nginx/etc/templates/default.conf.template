@@ -6,7 +6,6 @@ upstream docker-web {
 server {
 
 	listen ${NGINX_PORT};
-
 	#listen 443 ssl http2 default_server;
 	server_name ${NGINX_HOST};
 
