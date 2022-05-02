@@ -1,6 +1,6 @@
 # Docker Commands
-docker-compose -f docker-compose_dev.yml up -d
-docker-compose -f docker-compose_dev.yml logs -t
+docker-compose -f docker-compose_dev.yml up -d  
+docker-compose -f docker-compose_dev.yml logs -t  
 docker-compose -f docker-compose_dev.yml down
 
 # Ubuntu firewall
