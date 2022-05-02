@@ -8,8 +8,8 @@ ufw allow in to 172.17.0.0/16 proto tcp port 6000
 ufw allow in to 172.17.0.0/16 proto tcp port 6001
 
 # Linux permissions
-sudo chown -R www-data:[my-user] wordpress/  
-sudo chmod -R 775 wordpress/
+sudo chown -R www-data:[my-user] wordpress/src  
+sudo chmod -R 775 wordpress/src
 
 # wp-config.php
 define('WP_HOME', 'http://wp-docker-test.local');  
