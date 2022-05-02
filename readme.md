@@ -4,6 +4,8 @@ docker-compose -f docker-compose_dev.yml up -d
 docker-compose -f docker-compose_dev.yml logs -t  
 docker-compose -f docker-compose_dev.yml down
 
+docker exec -it [container id] /bin/bash
+
 # Ubuntu firewall
 
 Allows mysql access:  
