@@ -9,3 +9,5 @@ nginx/etc/*
 !nginx/etc/templates
 nginx/etc/templates/*
 !nginx/etc/templates/default.conf.template
+
+mysql/.env
