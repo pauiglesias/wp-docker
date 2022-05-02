@@ -1,0 +1,10 @@
+wordpress/.env
+wordpress/src/*
+!wordpress/src/wp-config.php
+!wordpress/src/wp-config-docker.php
+
+nginx/.env
+nginx/etc*
+!nginx/etc/nginx.conf
+!nginx/etc/templates/default.conf.template
+
