@@ -22,7 +22,7 @@ services:
     image: mysql:5.7
     restart: always
     ports:
-      - 6001:3306
+      - 10000:3306
     networks:
       wp-docker-network:
     env_file:
@@ -39,6 +39,7 @@ services:
       - ./nginx/etc/templates/default.conf.template:/etc/nginx/templates/default.conf.template:ro
     ports:
      - "127.0.0.3:80:80"
+     - "127.0.0.3:443:443"
     networks:
       wp-docker-network:
     env_file:
