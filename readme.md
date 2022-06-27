@@ -11,17 +11,13 @@ docker exec -it [container id] /bin/bash
 sudo chown -R www-data:[my-user] wordpress/src
 sudo chmod -R 775 wordpress/src
 
-# nginx Certs
-../data/nginx/certs
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
-
 # Config files
 
 wordpress/src/wp-config.php and/or
 wordpress/src/wp-config-docker.php (for docker image)
 
-define('WP_HOME', 'http://wp-docker-test.local');
-define('WP_SITEURL', 'http://wp-docker-test.local');
+define('WP_HOME', 'https://wp-docker-test.local');
+define('WP_SITEURL', 'https://wp-docker-test.local');
 
 # .htaccess
 
