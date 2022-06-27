@@ -1,27 +1,22 @@
 # Docker Commands
 
-docker-compose -f docker-compose_dev.yml up -d  
-docker-compose -f docker-compose_dev.yml logs -t  
+docker-compose -f docker-compose_dev.yml up -d
+docker-compose -f docker-compose_dev.yml logs -t
 docker-compose -f docker-compose_dev.yml down
 
 docker exec -it [container id] /bin/bash
 
-# Ubuntu firewall
-
-Allows mysql access:  
-ufw allow in to 172.17.0.0/16 proto tcp port 6001
-
 # Linux permissions
 
-sudo chown -R www-data:[my-user] wordpress/src  
+sudo chown -R www-data:[my-user] wordpress/src
 sudo chmod -R 775 wordpress/src
 
 # Config files
 
-wordpress/src/wp-config.php and/or  
+wordpress/src/wp-config.php and/or
 wordpress/src/wp-config-docker.php (for docker image)
 
-define('WP_HOME', 'http://wp-docker-test.local');  
+define('WP_HOME', 'http://wp-docker-test.local');
 define('WP_SITEURL', 'http://wp-docker-test.local');
 
 # .htaccess
