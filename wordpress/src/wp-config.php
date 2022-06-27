@@ -111,8 +111,8 @@ define( 'WP_DEBUG', !!getenv_docker('WORDPRESS_DEBUG', '') );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define('WP_HOME', 'http://wp-docker-test.local');
-define('WP_SITEURL', 'http://wp-docker-test.local');
+define('WP_HOME', 'https://wp-docker-test.local');
+define('WP_SITEURL', 'https://wp-docker-test.local');
 
 // If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
 // see also https://wordpress.org/support/article/administration-over-ssl/#using-a-reverse-proxy
