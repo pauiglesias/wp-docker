@@ -11,6 +11,10 @@ docker exec -it [container id] /bin/bash
 sudo chown -R www-data:[my-user] wordpress/src
 sudo chmod -R 775 wordpress/src
 
+# nginx Certs
+../data/nginx/certs
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
+
 # Config files
 
 wordpress/src/wp-config.php and/or
