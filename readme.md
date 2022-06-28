@@ -10,7 +10,7 @@ docker-compose -f docker-compose_dev.yml logs -t
 
 docker-compose -f docker-compose_dev.yml down
 
-docker exec -it [container id] /bin/bash\
+docker exec -it [container id] /bin/bash
 
 ## Linux permissions
 
