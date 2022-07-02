@@ -12,6 +12,10 @@ docker-compose -f docker-compose_dev.yml down
 
 docker exec -it [container id] /bin/bash
 
+## Nginx
+
+Copy .env_dev_sample to .env_dev and set the development domain.
+
 ## Linux permissions
 
 sudo chown -R www-data:[my-user] wordpress/src
