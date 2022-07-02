@@ -17,7 +17,7 @@ Credits:
     openssl genrsa -out tls.key 2048 && \
     openssl req -new -key tls.key -out tls.csr
 
-Create file openssl.cnf:
+Create file openssl.cnf changing the domain DNS names:
 
     # Extensions to add to a certificate request
     basicConstraints       = CA:FALSE
