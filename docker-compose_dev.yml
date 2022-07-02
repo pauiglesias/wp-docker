@@ -5,7 +5,7 @@ services:
   wordpress:
     image: wordpress:6.0-php7.4-apache
     depends_on:
-      - db
+      - mysql
     restart: always
     expose:
       - 80
@@ -18,7 +18,7 @@ services:
     volumes:
       - ./wordpress/src:/var/www/html:rw
 
-  db:
+  mysql:
     image: mysql:5.7
     restart: always
     ports:
@@ -30,7 +30,7 @@ services:
     volumes:
       - ../data/mysql:/var/lib/mysql:rw
 
-  web:
+  nginx:
     image: nginx:1.21.6
     depends_on:
       - wordpress
