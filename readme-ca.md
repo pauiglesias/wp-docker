@@ -40,9 +40,11 @@ Create file openssl.cnf changing the domain DNS names:
     -sha256 \
     -extfile openssl.cnf
 
+## Step 4: Verify you domain CA (change mydomain.local by your domain)
+
     openssl verify -CAfile rootCA.pem -verify_hostname mydomain.local tls.crt
 
-## Step 4: Adding CA as trusted to Chrome
+## Step 5: Adding CA as trusted to Chrome
 
 - Open Chrome settings, select Security > Manage Certificates.
 - Click the Authorities tab, then click the Import… button. This opens the Certificate Import Wizard.
