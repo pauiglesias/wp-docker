@@ -1,7 +1,5 @@
 wordpress/.env
-wordpress/src/*
-!wordpress/src/wp-config.php
-!wordpress/src/wp-config-docker.php
+wordpress/src
 
 nginx/.env
 nginx/.env_dev
