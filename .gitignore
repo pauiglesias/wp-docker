@@ -4,6 +4,7 @@ wordpress/src/*
 !wordpress/src/wp-config-docker.php
 
 nginx/.env
+nginx/.env_dev
 nginx/etc/*
 !nginx/etc/nginx.conf
 !nginx/etc/templates
