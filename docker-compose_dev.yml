@@ -15,8 +15,6 @@ services:
           - wp-network-wordpress
     env_file:
       - ./wordpress/.env_dev
-    extra_hosts:
-      - "${HOSTS}:${IP}"
     volumes:
       - ./wordpress/src:/var/www/html:rw
 
@@ -45,6 +43,9 @@ services:
      - "${IP}:443:443"
     networks:
       wp-network:
+        aliases:
+          - ${DOMAIN1}
+          - ${DOMAIN2}
     env_file:
       - ./nginx/.env_dev
 
