@@ -39,8 +39,8 @@ services:
       - ./nginx/etc/templates/default.conf.template:/etc/nginx/templates/default.conf.template:ro
       - ../data/nginx/certs:/etc/nginx/certs
     ports:
-     - "127.0.0.4:80:80"
-     - "127.0.0.4:443:443"
+     - "${NGINX_IP}:80:80"
+     - "${NGINX_IP}:443:443"
     networks:
       wp-network:
     env_file:
