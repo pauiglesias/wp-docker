@@ -15,6 +15,4 @@ nginx/etc/*
 nginx/etc/templates/*
 !nginx/etc/templates/default.conf.template
 
-wordpress/.env
-wordpress/.env_dev
-wordpress/src/*
+wordpress/
