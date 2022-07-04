@@ -13,10 +13,13 @@ services:
       wp-network:
         aliases:
           - wp-network-wordpress
-    env_file:
-      - ./wordpress/.env_dev
     volumes:
       - ./wordpress/src:/var/www/html:rw
+    environment:
+      - WORDPRESS_DB_HOST=mysql
+      - WORDPRESS_DB_USER=${MYSQL_USER}
+      - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
+      - WORDPRESS_DB_NAME=${MYSQL_DATABASE}
 
   mysql:
     image: mysql:5.7
@@ -25,10 +28,13 @@ services:
       - 10000:3306
     networks:
       wp-network:
-    env_file:
-      - ./mysql/.env_dev
     volumes:
       - ../data/mysql:/var/lib/mysql:rw
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_RANDOM_ROOT_PASSWORD=${MYSQL_RANDOM_ROOT_PASSWORD}
 
   nginx:
     image: nginx:1.21.6
