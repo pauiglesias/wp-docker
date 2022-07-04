@@ -52,8 +52,11 @@ services:
         aliases:
           - ${DOMAIN1}
           - ${DOMAIN2}
-    env_file:
-      - ./nginx/.env_dev
+    environment:
+      - NGINX_HOST=${DOMAIN1} ${DOMAIN2}
+      - NGINX_PORT=${NGINX_PORT}
+      - APP_NETWORK=wp-network-wordpress
+      - APP_PORT=80
 
 networks:
   wp-network:
