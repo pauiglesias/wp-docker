@@ -7,7 +7,6 @@ services:
     depends_on:
       - mysql
     restart: always
-    container_name: wp-sandbox1_wp
     expose:
       - 80
     networks:
@@ -22,7 +21,6 @@ services:
   mysql:
     image: mysql:5.7
     restart: always
-    container_name: wp-sandbox1_mysql
     ports:
       - 10000:3306
     networks:
@@ -36,7 +34,6 @@ services:
     image: nginx:1.21.6
     depends_on:
       - wordpress
-    container_name: wp-sandbox1_nginx
     volumes:
       - ./nginx/etc/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/etc/templates/default.conf.template:/etc/nginx/templates/default.conf.template:ro
@@ -51,4 +48,3 @@ services:
 
 networks:
   wp-network:
-    name: wp-sandbox1_network

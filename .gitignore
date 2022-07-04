@@ -1,3 +1,5 @@
+.env_dev
+
 wordpress/.env
 wordpress/src
 

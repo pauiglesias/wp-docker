@@ -4,6 +4,16 @@ Domain used for testing: wp-docker-test.local
 
 ## Docker Commands
 
+docker-compose --env-file=.env_dev up -d
+
+docker-compose --env-file=.env_dev logs -t
+
+docker-compose --env-file=.env_dev down
+
+docker stats --no-stream
+
+-
+
 docker-compose -f docker-compose_dev.yml up -d
 
 docker-compose -f docker-compose_dev.yml logs -t
