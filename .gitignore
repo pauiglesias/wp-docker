@@ -1,14 +1,18 @@
+.env
 .env_dev
 
 mysql/.env
+mysql/.env_dev
 
 nginx/.env
 nginx/.env_dev
+
 nginx/etc/*
 !nginx/etc/nginx.conf
 !nginx/etc/templates
 nginx/etc/templates/*
 !nginx/etc/templates/default.conf.template
 
-!wordpress/
-wordpress/*
+wordpress/.env
+wordpress/.env_dev
+wordpress/src/*
