@@ -10,17 +10,9 @@ docker-compose --env-file=.env_dev logs -t
 
 docker-compose --env-file=.env_dev down
 
-docker stats --no-stream
-
--
-
-docker-compose -f docker-compose_dev.yml up -d
-
-docker-compose -f docker-compose_dev.yml logs -t
-
-docker-compose -f docker-compose_dev.yml down
-
 docker exec -it [container id] /bin/bash
+
+docker stats --no-stream
 
 ## Nginx
 
