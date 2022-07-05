@@ -4,11 +4,11 @@ Domain used for testing: wp-docker-test.local
 
 ## Docker Commands
 
-docker-compose --env-file=.env_dev up -d
+docker compose --env-file=.env_dev up -d
 
-docker-compose --env-file=.env_dev logs -t
+docker compose --env-file=.env_dev logs -t
 
-docker-compose --env-file=.env_dev down
+docker compose --env-file=.env_dev down
 
 docker exec -it [container id] /bin/bash
 
