@@ -14,6 +14,10 @@ docker exec -it [container id] /bin/bash
 
 docker stats --no-stream
 
+## MySQL
+
+Create a ../data/mysql directory to avoid volume lost
+
 ## Nginx
 
 Copy .env_dev_sample to .env_dev and set the development domain.
