@@ -38,6 +38,7 @@ services:
 
   nginx:
     image: nginx:1.21.6
+    restart: always
     depends_on:
       - wordpress
     volumes:
