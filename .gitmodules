@@ -1,3 +1,6 @@
 [submodule "wordpress/src/wp-content/themes/asimetrica"]
 	path = wordpress/src/wp-content/themes/asimetrica
 	url = https://gitlab.com/microdeploy/asimetrica-theme.git
+[submodule "wordpress/src/wp-content/themes/asimetrica-astro"]
+	path = wordpress/src/wp-content/themes/asimetrica-astro
+	url = https://gitlab.com/microdeploy/asimetrica-astro.git
