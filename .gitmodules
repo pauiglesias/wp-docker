@@ -1,0 +1,3 @@
+[submodule "wordpress/src/wp-content/themes/asimetrica"]
+	path = wordpress/src/wp-content/themes/asimetrica
+	url = https://gitlab.com/microdeploy/asimetrica-theme.git
