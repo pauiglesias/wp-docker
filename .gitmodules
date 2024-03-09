@@ -1,0 +1,3 @@
+[submodule "wordpress/src/wp-content/plugins/seo-crawler"]
+	path = wordpress/src/wp-content/plugins/seo-crawler
+	url = https://gitlab.com/microdeploy/seo-crawler.git
