@@ -6,6 +6,7 @@
 !README.md
 
 !docker_up.sh
+!docker_down.sh
 !docker-compose.yml
 
 !env/

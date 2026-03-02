@@ -1,14 +1,14 @@
 # WP Docker
 
-Domain used for testing: wp-docker-test.local
+Domain used for testing: wp-docker.local
 
 ## Docker Commands
 
-docker compose --env-file=.env_dev up -d
+./docker_up.sh env/myenv.env
 
-docker compose --env-file=.env_dev logs -t
+docker compose --env-file=env/myenv.env logs -t
 
-docker compose --env-file=.env_dev down
+docker compose --env-file=env/myenv.env down
 
 docker exec -it [container id] /bin/bash
 
@@ -20,7 +20,7 @@ Create a ../data/mysql directory to avoid volume lost
 
 ## Nginx
 
-Copy .env_dev_sample to .env_dev and set the development domain.
+Copy env/_sample.env to a new .env file in the env/ directory and set the development domain.
 
 ## Linux permissions
 
@@ -34,10 +34,8 @@ wordpress/src/wp-config.php and/or
 
 wordpress/src/wp-config-docker.php (for docker image)
 
-define('WP_HOME', 'https://wp-docker-test.local');
-
-define('WP_SITEURL', 'https://wp-docker-test.local');
-
+define('WP_HOME', 'https://wp-docker.local');
+define('WP_SITEURL', 'https://wp-docker.local');
 define('FS_METHOD', 'direct');
 
 ## .htaccess
@@ -51,8 +49,8 @@ define('FS_METHOD', 'direct');
         RewriteEngine On
 
         # www redirect local
-        RewriteCond %{HTTP_HOST} ^www.wp-docker-test.local$ [NC]
-        RewriteRule ^ http://wp-docker-test.local%{REQUEST_URI} [R=301,L]
+        RewriteCond %{HTTP_HOST} ^www.wp-docker.local$ [NC]
+        RewriteRule ^ http://wp-docker.local%{REQUEST_URI} [R=301,L]
 
         # www redirect live
         RewriteCond %{HTTP_HOST} ^www.mydomain.com$ [NC]
@@ -73,4 +71,4 @@ define('FS_METHOD', 'direct');
 
 ## hosts file
 
-127.0.0.[number] wp-docker-test.local www.wp-docker-test.local
+127.0.0.[number] wp-docker.local www.wp-docker.local
