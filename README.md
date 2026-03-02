@@ -2,9 +2,19 @@
 
 Domain used for testing: wp-docker.local
 
-## Docker Commands
 
-./docker_up.sh env/myenv.env
+
+## Docker Shell scripts
+
+Start containers
+./docker_up.sh env/wp_docker.env
+
+End docker processes
+./docker_down.sh env/wp_docker.env
+
+
+
+## Docker Commands
 
 docker compose --env-file=env/myenv.env logs -t
 
