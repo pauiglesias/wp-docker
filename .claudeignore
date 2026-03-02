@@ -1,3 +1,6 @@
+data/
+data/*
+
 !/env/
 /env/*
 !/env/_sample.env
