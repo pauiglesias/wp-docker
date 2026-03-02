@@ -1,20 +1,23 @@
-.gitignore
+/*
 
-.env
-.env_dev
+!.gitignore
 
-mysql/.env
-mysql/.env_dev
+!CLAUDE.md
 
-nginx/.env
-nginx/.env_dev
+!env/
+env/*
+!env/_sample.env
 
+!nginx/
+nginx/*
+!nginx/etc/
 nginx/etc/*
 !nginx/etc/nginx.conf
 !nginx/etc/templates
 nginx/etc/templates/*
 !nginx/etc/templates/default.conf.template
 
+!wordpress/
 wordpress/*
 !wordpress/src
 wordpress/src/*
