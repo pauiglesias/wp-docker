@@ -8,7 +8,7 @@ Dockerized WordPress development environment using three services: WordPress (PH
 
 ## Architecture
 
-- **docker-compose_dev.yml** — Defines all three services and a shared `wp-network` bridge network
+- **docker-compose.yml** — Defines all three services and a shared `wp-network` bridge network
 - **Nginx** reverse-proxies port 80/443 to WordPress Apache on port 80 via the `wp-network-wordpress` alias
 - **MySQL** data is persisted to `../data/mysql` (outside the repo) to survive container rebuilds
 - **SSL certs** are stored in `../data/nginx/certs/` — see `docs/certificates.md` for self-signed cert generation
