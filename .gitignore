@@ -9,6 +9,12 @@
 !docker_down.sh
 !docker-compose.yml
 
+!data/
+data/*
+!data/mysql
+data/mysql/*
+!data/mysql/.gitkeep
+
 !env/
 env/*
 !env/_sample.env
