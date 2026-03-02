@@ -5,8 +5,9 @@
 !CLAUDE.md
 !README.md
 
-!docker_up.sh
 !docker_down.sh
+!docker_logs.sh
+!docker_up.sh
 !docker-compose.yml
 
 !data/
@@ -16,7 +17,9 @@ data/mysql/*
 !data/mysql/.gitkeep
 !data/nginx
 data/nginx/*
-!data/nginx/.gitkeep
+!data/nginx/certs
+data/nginx/certs/*
+!data/nginx/certs/.gitkeep
 
 !env/
 env/*
