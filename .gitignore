@@ -3,6 +3,10 @@
 !.gitignore
 
 !CLAUDE.md
+!README.md
+
+!docker_up.sh
+!docker-compose.yml
 
 !env/
 env/*
