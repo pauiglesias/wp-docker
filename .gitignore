@@ -14,6 +14,9 @@ data/*
 !data/mysql
 data/mysql/*
 !data/mysql/.gitkeep
+!data/nginx
+data/nginx/*
+!data/nginx/.gitkeep
 
 !env/
 env/*
