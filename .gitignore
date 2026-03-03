@@ -9,6 +9,7 @@
 !docker_logs.sh
 !docker_up.sh
 !docker-compose.yml
+!nginx-certs.sh
 
 !data/
 data/*
