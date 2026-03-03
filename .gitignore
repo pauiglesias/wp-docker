@@ -39,3 +39,7 @@ wordpress/*
 !wordpress/src
 wordpress/src/*
 !wordpress/src/.gitkeep
+
+!docs/
+docs/*
+!docs/*.md
